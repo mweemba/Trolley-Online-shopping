@@ -1,0 +1,484 @@
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+.navbar {
+	background:#000;
+	background: linear-gradient(top, #000000, rgba(0,16,23,0.9), rgba(0,67,95,.7));
+	background: -moz-linear-gradient(top, #000000, rgba(0,16,23,0.9), rgba(0,67,95,.7));
+	background: -ms-linear-gradient(top, #000000, rgba(0,16,23,0.9), rgba(0,67,95,.7));
+	background: -webkit-linear-gradient(top, #000000, rgba(0,16,23,0.9), rgba(0,67,95,.7));
+	background: -o-linear-gradient(top, #000000, rgba(0,16,23,0.9), rgba(0,67,95,.7));
+	box-shadow: inset 0px -1px rgba(225,225,255,0.5), inset 0 -3px rgba(225,225,255,0.4), inset 0 -5px 20px rgba(225,225,255,0.45),inset 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+						/*-------------------Body------------------------*/
+						/*-------------------Body------------------------*/
+						/*-------------------Body------------------------*/
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+#gap {
+	height:54px;
+}
+
+#links {
+	display:none;
+	position:fixed;
+	margin-top:100px;
+	float:right;
+	right:0px;
+	width:55px;
+	height:auto;
+	z-index:1;	
+}
+
+ul#links li {
+	margin-left:5px;
+	width:50px;
+	height:50px;
+	display:block;	
+}
+
+#container {
+	width:100%;
+	margin:auto;
+}
+
+.logo {
+	background: linear-gradient(rgba(0,16,23,0.8), rgba(0,67,95,.5));
+	background: -webkit-linear-gradient(top, rgba(0,16,23,0.8), rgba(0,67,95,.5));
+	background: -o-linear-gradient(top, rgba(0,16,23,0.8), rgba(0,67,95,.5));
+	background: -moz-linear-gradient(top, rgba(0,16,23,0.8), rgba(0,67,95,.5));
+	background: -ms-linear-gradient(top, rgba(0,16,23,0.8), rgba(0,67,95,.5));
+	box-shadow:-1px 0px 5px rgba(0,0,0,.1);
+}
+
+.logopic img {
+	height:80%;
+	width:100%;
+	margin-top:40px;	
+}
+
+.search input {
+	width:180px;
+}
+
+.search input#search {
+	width:100px;
+}
+.slider-wrapper {
+	border-top-right-radius:8px;
+	width: 56%;
+}
+
+.slideShow {
+	overflow:hidden;
+	width:100%;
+}
+
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+						/*-------------------Content------------------------*/
+						/*-------------------Content------------------------*/
+						/*-------------------Content------------------------*/
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+
+#content {
+	min-height:1150px;
+}
+
+ul#menu li a {
+   font-size: 14px;
+   line-height:15px;
+}
+
+.adds {
+	width:96.5%;
+	height:auto;
+	overflow:visible;
+}
+
+/*------other pages------*/
+.mainPanel {
+	margin-left:4px;
+	width:71%;
+	height:auto;
+}
+
+.Results {
+	width:88.2%;
+	height:1110px;
+	margin-left:4px;
+}
+
+.info {
+	margin-left:4px;
+	width:71%;
+}
+
+.LoginPanel {
+	margin-left:4px;
+	width:71%;
+	height:auto;
+}
+
+.Contact {
+	margin-left:4px;
+	width:71%;
+}
+
+#Message input {
+	width: 250px;
+}
+
+#Message textarea {
+	width: 360px;
+	font-size: 15px;
+}
+
+#Message input#submit {
+	font-size:16px;
+	margin-left:275px;
+}
+
+#login {
+	margin-left:4px;
+}
+
+/*------End other pages------*/
+
+.carSlot {
+	width:28%;
+	height:162px;
+	margin-right:20px;  
+}
+
+#relatedItems .carSlot {
+	height:150px;
+}
+
+.NewTag, .TopTag, .SpecialTag, .SoldTag {
+	height:14%;
+}
+
+.NewTag h7, .TopTag h7, .SpecialTag h8, .SoldTag h7{
+	padding:2px 30px;
+	margin-left:3px;
+}
+
+.SpecialTag h8 {
+	margin-left:-4px;
+}
+
+.HandleNew1, .HandleTop1, .HandleSpecial1, .HandleSold1 {
+	right:21%;
+}
+
+.HandleNew2, .HandleTop2, .HandleSpecial2, .HandleSold2 {
+	top:26%;
+}
+
+.PriceHandle {
+	margin-top:-24px;
+}
+
+.price {
+	margin-left:-8px;
+}			
+
+h1 {
+	font-size:20px;
+}
+
+#relatedItems .carSlot h1 {
+	font-size:16px;
+}
+
+#relatedItems .carSlot .HandleNew1, #relatedItems .carSlot .HandleTop1, #relatedItems  .carSlot .HandleSpecial1,  #relatedItems  .carSlot .HandleSold1 {
+	right:19%;
+}
+
+#relatedItems .carSlot .HandleNew2, #relatedItems .carSlot .HandleTop2, #relatedItems  .carSlot .HandleSpecial2,  #relatedItems  .carSlot .HandleSold2 {
+	top:26%;
+	right:0px;
+}
+
+#relatedItems .carSlot h7 {
+	padding:2px 60%;
+}			
+
+#relatedItems .carSlot h8 {
+	padding:3px 63%;
+}			
+
+h5 {
+	height:22px;
+}
+
+h9 {
+	font-size:16px;
+}
+
+h7 {
+	font-size:12px;
+}
+
+h8 {
+	font-size:12px;
+}
+
+h12 p {
+	font-size:14px;
+}
+
+h12 p2 {
+	font-size:16px;
+}		
+
+.carSlot:hover {
+	cursor:pointer;
+	
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.carSlot:hover {
+	background:rgba(255,255,255,1);
+}
+
+.carPic img {
+	background-size:5%;
+}
+
+@media only screen and (min-width : 980px) and (max-width : 1119px), @media only screen and (min-device-width : 920px) and (max-device-width : 1119px) {
+.carSlot {
+	height:189px;
+	margin-top:20px;
+}
+
+#relatedItems .carSlot {
+	width:85%;
+	height:170px;
+	margin-left:20px;
+}
+
+.NewTag h7, .TopTag h7, .SpecialTag h8, .SoldTag h7{
+	padding:3px 35px;
+	margin-left:0px;
+}
+
+.NewTag, .TopTag, .SpecialTag, .SoldTag {
+	margin-top:4px;
+}
+
+.SpecialTag h8 {
+	margin-left:-10px;
+}
+
+.HandleNew1, .HandleTop1, .HandleSpecial1, .HandleSold1 {
+	right:22%;
+}
+} /*===end Media Query===*/
+
+@media only screen and (min-device-width : 920px) and (max-device-width : 1119px) {
+.HandleNew1, .HandleTop1, .HandleSpecial1, .HandleSold1 {
+	right:22%;
+}
+
+.HandleNew2, .HandleTop2, .HandleSpecial2, .HandleSold2 {
+	top:30%;
+}
+
+#relatedItems .carSlot .HandleNew1, #relatedItems .carSlot .HandleTop1, #relatedItems  .carSlot .HandleSpecial1,  #relatedItems  .carSlot .HandleSold1 {
+	right:18%;
+}
+
+#relatedItems .carSlot .HandleNew2, #relatedItems .carSlot .HandleTop2, #relatedItems  .carSlot .HandleSpecial2,  #relatedItems  .carSlot .HandleSold2 {
+	top:25%;
+	right:0px;
+}
+
+#relatedItems .carSlot h7 {
+	margin-left:-6%;
+}			
+
+#relatedItems .carSlot h8 {
+	margin-left:-16%;
+}			
+} /*===end Media Query===*/
+
+
+h5 {
+	height:25px;
+}
+
+#relatedItems .carSlot h5 {
+	height:15%;
+}
+
+#relatedItems .carSlot h9 {
+	font-size:18px;
+}
+
+h7 {
+	margin-left:38px;
+	font-size:16px;
+}
+
+h8 {
+	margin-left:28px;
+	font-size:15px;
+}
+
+h9 {
+	font-size:15px;
+} 
+
+h12 p {
+	font-size:15px;
+} 
+
+h12 p2 {
+	font-size:17px;
+} 
+
+@media only screen and (min-width : 980px) and (max-width : 1119px) {
+h7 {
+	margin-left:38px;
+	font-size:14px;
+}
+
+#relatedItems .carSlot h9 {
+	font-size:16px;
+}
+
+h8 {
+	margin-left:30px;
+	font-size:14px;
+}
+
+#relatedItems .NewTag h7, #relatedItems .TopTag h7, #relatedItems .SpecialTag h8, #relatedItems .SoldTag h7{
+	padding:1px 35px;
+}
+
+#relatedItems .carSlot .HandleNew1, #relatedItems .carSlot .HandleTop1, #relatedItems  .carSlot .HandleSpecial1,  #relatedItems  .carSlot .HandleSold1 {
+	right:22%;
+}
+
+#relatedItems .carSlot .HandleNew2, #relatedItems .carSlot .HandleTop2, #relatedItems  .carSlot .HandleSpecial2,  #relatedItems  .carSlot .HandleSold2 {
+	top:26.5%;
+	right:0px;
+}
+
+#relatedItems .carSlot h7 {
+	padding:2px 54%;
+	font-size:14px;
+}			
+
+#relatedItems .carSlot h8 {
+	padding:2px 54%;
+	font-size:14px;
+}			
+
+h1 {
+	font-size:24px;
+}
+
+#relatedItems .carSlot h1 {
+	font-size:22px;
+}
+
+} /*===end Media Query===*/
+
+@media only screen and (min-device-width : 860px) and (max-device-width : 1019px) {
+h7 {
+	text-shadow: 0px -1px 0px black;
+	margin-left:40px;
+	font-size:12px;
+	color:white;
+}
+
+h8 {
+	margin-left:35px;
+	font-size:11px;
+	color:white;
+}
+
+} /*===end Media Query===*/
+
+@media only screen and (min-width : 860px) and (max-width : 979px) {
+h5 {
+	height:20px;
+}
+
+h7 {
+	font-size:13px;
+}
+
+h8 {
+	font-size:12px;
+}
+
+h9 {
+	font-size:13px;
+}
+
+h12 p {
+	font-size:13px;
+} 	
+
+h12 p2 {
+	font-size:15px;
+} 	 	
+} /*===end Media Query===*/
+
+/*------other pages------*/
+#details {
+	width:28.3%;
+	height:auto;
+}
+
+h2 {
+	font-size: 22px;
+}
+/*------End other pages------*/
+		
+h3, h16 {
+	font-size:18px;
+}
+
+/*------other pages------*/
+.buyNow {
+	width:100%;
+	text-align:center;
+	line-height:30px;
+	}
+
+.buyNow d {
+	font-size:21px;
+}
+/*------End other pages------*/
+
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+						/*-------------------Footer------------------------*/
+						/*-------------------Footer------------------------*/
+						/*-------------------Footer------------------------*/
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+
+#footer {
+	width: 100%;
+	box-shadow:inset 0px -2px rgba(225,225,255,0.5), inset 1px 0 rgba(225,225,255,0.5), inset 10px 0 rgba(225,225,255,0.4), inset 10px 0 30px rgba(225,225,255,0.45),inset -15px 0 60px rgba(0,0,0,0.2), inset -1px 0 rgba(225,225,255,0.5), inset -10px 0 rgba(225,225,255,0.4), inset -10px 0 30px rgba(225,225,255,0.45),inset 15px 0 60px rgba(0,0,0,0.5);
+	filter:alpha(opacity=50);
+	-moz-opacity:.50;
+	opacity:.50;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+}
+
+#footerWrapper {
+	width:100%;
+}
+
+h10 p {
+	margin-top:-150px;
+}
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/

@@ -1,0 +1,1235 @@
+﻿emmanuel@eccentricsolution.com 	
+	
+esoftware@eccentricsolution.com 	
+	
+innocent.musonda@eccentricsolution.com 	
+	
+mweemba.hachiita@eccentricsolution.com 	
+	
+nathan.tembo@eccentricsolution.com 	
+	
+sales.marketing@eccentricsolution.com 	
+	
+samuel.banda@eccentricsolution.com 	
+	
+support@eccentricsolution.com
+w3resource8menu0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skip_previous skip_next 
+
+
+
+
+
+
+share 
+
+
+
+
+
+JavaScript Form Validation using a Sample Registration Form�Last update on January 16 2018 08:22:09 (UTC/GMT +8 hours)mForm Validation�
+In this document, we have discussed JavaScript Form Validation using a sample registration form. The tutorial explores JavaScript validation on submit with detail explanation. 
+Following pictorial shows in which field, what validation we want to impose. 
+
+How would we set those validations
+We will create JavaScript functions (one for each input field whose value is to validate) which check whether a value submitted by user passes the validation. 
+All those functions are called from another function. 
+It sets the focus to the input field until the user supplies a valid value.�
+When the user does so, they may proceed and can supply value to the next available field. 
+The later JavaScript function created is called on the onsubmit event of the form. 
+HTML Code of the Sample Registration Form 
+<!DOCTYPE html> 
+<�
+html�
+lang�
+=�
+"�
+en�
+"�
+>�
+<�
+head�
+>�
+<�
+meta�
+charset�
+=�
+"�
+utf-8�
+"�
+>�
+<�
+title�
+>�
+JavaScript Form Validation using a sample registration form�
+</�
+title�
+>�
+<�
+meta�
+name�
+=�
+"�
+keywords 
+"�
+content�
+=�
+"�
+example, JavaScript Form Validation, Sample registration form�
+"�
+/>�
+<�
+meta�
+name�
+=�
+"�
+description 
+"�
+content�
+=�
+"�
+This document is an example of JavaScript Form Validation using a sample registration form.  
+"�
+/>�
+<�
+link�
+rel�
+=�
+'�
+stylesheet 
+'�
+href�
+=�
+'�
+js-form-validation.css 
+'�
+type�
+=�
+'�
+text/css 
+'�
+/>�
+<�
+script�
+src�
+=�
+"�
+sample-registration-form-validation.js�
+"�
+>�
+</�
+script�
+>�
+</�
+head�
+>�
+<�
+body�
+onload�
+=�
+"�
+document.registration.userid.focus();�
+"�
+>�
+<�
+h1�
+>�
+Registration Form 
+</�
+h1�
+>�
+Use tab keys to move from one input field to the next. 
+<�
+form�
+name�
+=�
+'�
+registration 
+'�
+onSubmitP
+=�
+"�
+return formValidation();w
+"�
+>�
+<�
+ul�
+>�
+<�
+li�
+>�
+<�
+label�
+for�
+=�
+"�
+userid�
+"�
+>�
+User id: 
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+text�
+"�
+name�
+=�
+"�
+userid�
+"�
+size�
+=�
+"�
+12�
+"�
+/>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+label�
+for�
+=�
+"�
+passid�
+"�
+>�
+Password: 
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+password 
+"�
+name�
+=�
+"�
+passid�
+"�
+size�
+=�
+"�
+12�
+"�
+/>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+label�
+for�
+=�
+"�
+username 
+"�
+>�
+Name:�
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+text�
+"�
+name�
+=�
+"�
+username 
+"�
+size�
+=�
+"�
+50�
+"�
+/>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+label�
+for�
+=�
+"�
+address�
+"�
+>�
+Address: 
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+text�
+"�
+name�
+=�
+"�
+address�
+"�
+size�
+=�
+"�
+50�
+"�
+/>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+label�
+for�
+=�
+"�
+country�
+"�
+>�
+Country: 
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+select�
+name�
+=�
+"�
+country�
+"�
+>�
+<�
+option�
+selectedP
+=�
+"�
+"�
+value�
+=�
+"�
+Default�
+"�
+>�
+(Please select a country)t
+</�
+option�
+>�
+<�
+option�
+value�
+=�
+"�
+AF�
+"�
+>�
+Australia 
+</�
+option�
+>�
+<�
+option�
+value�
+=�
+"�
+AL�
+"�
+>�
+Canada�
+</�
+option�
+>�
+<�
+option�
+value�
+=�
+"�
+DZ�
+"�
+>�
+India�
+</�
+option�
+>�
+<�
+option�
+value�
+=�
+"�
+AS�
+"�
+>�
+Russia�
+</�
+option�
+>�
+<�
+option�
+value�
+=�
+"�
+AD�
+"�
+>�
+USA�
+</�
+option�
+>�
+</�
+select�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+label�
+for�
+=�
+"�
+zip�
+"�
+>�
+ZIP Code: 
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+text�
+"�
+name�
+=�
+"�
+zip�
+"�
+/>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+label�
+for�
+=�
+"�
+email�
+"�
+>�
+Email:�
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+text�
+"�
+name�
+=�
+"�
+email�
+"�
+size�
+=�
+"�
+50�
+"�
+/>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+label�
+id�
+=�
+"�
+gender�
+"�
+>�
+Sex:�
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+radio�
+"�
+name�
+=�
+"�
+msex�
+"�
+value�
+=�
+"�
+Male�
+"�
+/>�
+<�
+span�
+>�
+Male�
+</�
+span�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+radio�
+"�
+name�
+=�
+"�
+fsex�
+"�
+value�
+=�
+"�
+Female�
+"�
+/>�
+<�
+span�
+>�
+Female�
+</�
+span�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+label�
+>�
+Language: 
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+checkbox 
+"�
+name�
+=�
+"�
+en�
+"�
+value�
+=�
+"�
+en�
+"�
+checked�
+/>�
+<�
+span�
+>�
+English�
+</�
+span�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+checkbox 
+"�
+name�
+=�
+"�
+nonen�
+"�
+value�
+=�
+"�
+noen�
+"�
+/>�
+<�
+span�
+>�
+Non English 
+</�
+span�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+label�
+for�
+=�
+"�
+desc�
+"�
+>�
+About:�
+</�
+label�
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+textarea 
+name�
+=�
+"�
+desc�
+"�
+id�
+=�
+"�
+desc�
+"�
+>�
+</�
+textarea 
+>�
+</�
+li�
+>�
+<�
+li�
+>�
+<�
+input�
+type�
+=�
+"�
+submit�
+"�
+name�
+=�
+"�
+submit�
+"�
+value�
+=�
+"�
+Submit�
+"�
+/>�
+</�
+li�
+>�
+</�
+ul�
+>�
+</�
+form�
+>�
+</�
+body�
+>�
+</�
+html�
+>�
+sample-registration-form-validation.js is the external JavaScript file which contains the JavaScript ocde used to validate the form. js-form-validation.css is the stylesheet containing styles for the form. Notice that for validation, the JavaScript function containing the code to validate is called on the onSubmit event of the form.c
+For the sake of demonstration, we have taken five countries only. You may add any number of countries in the list.<
+CSS Code of the Sample Registration Form
+h1 {@
+margin-left: 70px; 
+}�
+form li { 
+list-style: none; 
+margin-bottom: 5px; 
+}�
+form ul li label{ 
+float: left; 
+clear: left; 
+width: 100px; 
+text-align: right; 
+margin-right: 10px; 
+font-family:Verdana, Arial, Helvetica, sans-serif;t
+font-size:14px; 
+}�
+form ul li input, select, span {�
+float: left; 
+margin-bottom: 10px; 
+}�
+form textarea { 
+float: left;a
+width: 350px; 
+height: 150px;{
+}�
+[type="submit"] { 
+clear: left; 
+margin: 20px 0 0 230px; 
+font-size:18px 
+}�
+p {�
+margin-left: 70px; 
+font-weight: bold; 
+}�
+JavaScript code for validation 
+JavaScript function which is called on onSubmit 
+This function calls all other functions used for validation.�
+function formValidation()a
+{�
+var uid = document.registration.userid;�
+var passid = document.registration.passid; 
+var uname = document.registration.username; 
+var uadd = document.registration.address; 
+var ucountry = document.registration.country;i
+var uzip = document.registration.zip;5
+var uemail = document.registration.email; 
+var umsex = document.registration.msex;�
+var ufsex = document.registration.fsex; if(userid_validation(uid,5,12))�
+{�
+if(passid_validation(passid,7,12))�
+{�
+if(allLetter(uname)) 
+{�
+if(alphanumeric(uadd)) 
+{ g
+if(countryselect(ucountry))i
+{�
+if(allnumeric(uzip)) 
+{�
+if(ValidateEmail(uemail)))
+{�
+if(validsex(umsex,ufsex)))
+{�
+}�
+} g
+}�
+} g
+}�
+}�
+}�
+}�
+return false; 
+}�
+JavaScript function for validating userid 
+function userid_validation(uid,mx,my)5
+{�
+var uid_len = uid.value.length; 
+if (uid_len == 0 || uid_len >= my || uid_len < mx))
+{�
+alert("User Id should not be empty / length be between "+mx+" to "+my);�
+uid.focus(); 
+return false; 
+}�
+return true; 
+}�
+The code above checks whether userid input field is provided with a string of length 5 to 12 characters. If not, it displays an alert.m
+Flowchart:
+
+avaScript function for validating password 
+function passid_validation(passid,mx,my)
+{
+var passid_len = passid.value.length;�
+if (passid_len == 0 ||passid_len >= my || passid_len < mx)f
+{
+alert("Password should not be empty / length be between "+mx+" to "+my);
+passid.focus(); 
+return false;)
+}
+return true; 
+}
+The above code used to validate password (it should be of length 7 to 12 characters). If not, it displays an alert.�
+Flowchart:
+
+JavaScript code for validating user name
+function allLetter(uname)w
+{ �
+var letters = /^[A-Za-z]+$/; 
+if(uname.value.match(letters)) 
+{
+return true; 
+}
+else�
+{
+alert('Username must have alphabet characters only'); 
+uname.focus(); 
+return false;;
+}
+}
+The code above checks whether user name input field is provided with alphabates characters. If not, it displays an alert. 
+Flowchart:
+
+JavaScript code for validating user address 
+function alphanumeric(uadd) 
+{ �
+var letters = /^[0-9a-zA-Z]+$/; 
+if(uadd.value.match(letters))/
+{
+return true; 
+}
+else
+{
+alert('User address must have alphanumeric characters only');�
+uadd.focus(); 
+return false; 
+}
+}
+The code above checks whether user address input field is provided with alphanumeric characters. If not, it displays an alert. 
+Flowchart:
+
+JavaScript code for validating country�
+function countryselect(ucountry).
+{"
+if(ucountry.value == "Default") 
+{#
+alert('Select your country from the list'); 
+ucountry.focus(); 
+return false; 
+}$
+elseP
+{$
+return true; 
+}$
+}$
+The code above checks whether a country is selected from the given list. If not, then it displays an alert. 
+Flowchart:
+
+JavaScript code for validating ZIP code�
+function allnumeric(uzip)o
+{ �
+var numbers = /^[0-9]+$/;o
+if(uzip.value.match(numbers)) 
+{)
+return true; 
+}*
+else�
+{*
+alert('ZIP code must have numeric characters only'); 
+uzip.focus(); 
+return false; 
+}*
+}*
+The code above checks whether a ZIP code of numeric value. If not, it displays an alert.4
+Flowchart:
+
+JavaScript code for validating email format 
+function ValidateEmail(uemail) 
+{/
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;S
+if(uemail.value.match(mailformat))
+{0
+return true; 
+}1
+else 
+{1
+alert("You have entered an invalid email address!"); 
+uemail.focus(); 
+return false;)
+}1
+}1
+The code above checks whether a valid email format is supplied. If not,it displays an alert. 
+Flowchart:
+
+JavaScript code for validating gender�
+function validsex(umsex,ufsex) 
+{5
+x=0;p
+if(umsex.checked)  
+{6
+x++;p
+} if(ufsex.checked) 
+{6
+x++; 6
+}6
+if(x==0) 
+{6
+alert('Select Male/Female');�
+umsex.focus(); 
+return false;;
+}:
+else�
+{:
+alert('Form Successfully Submitted');�
+window.location.reload();
+return true;} 
+}:
+The code above checks whether a sex is selected. If not, it displays an alert. If Male or Female is selected, it generates an alert saying that the form is successfully submitted and it reloads the form. 
+Flowchart:
+
+Here is the entire JavaScript used for validation of the form.f
+function formValidation()o
+{>
+var uid = document.registration.userid;�
+var passid = document.registration.passid; 
+var uname = document.registration.username; 
+var uadd = document.registration.address; 
+var ucountry = document.registration.country; 
+var uzip = document.registration.zip;5
+var uemail = document.registration.email; 
+var umsex = document.registration.msex;�
+var ufsex = document.registration.fsex; if(userid_validation(uid,5,12))�
+{B
+if(passid_validation(passid,7,12))�
+{B
+if(allLetter(uname)) 
+{C
+if(alphanumeric(uadd)) 
+{ �
+if(countryselect(ucountry))t
+{C
+if(allnumeric(uzip)) 
+{C
+if(ValidateEmail(uemail)))
+{C
+if(validsex(umsex,ufsex)))
+{C
+}C
+} �
+}C
+} �
+}C
+}C
+}C
+}C
+return false; 
+} function userid_validation(uid,mx,my) 
+{C
+var uid_len = uid.value.length; 
+if (uid_len == 0 || uid_len >= my || uid_len < mx))
+{K
+alert("User Id should not be empty / length be between "+mx+" to "+my);�
+uid.focus(); 
+return false; 
+}L
+return true; 
+}L
+function passid_validation(passid,mx,my)
+{L
+var passid_len = passid.value.length;�
+if (passid_len == 0 ||passid_len >= my || passid_len < mx)f
+{L
+alert("Password should not be empty / length be between "+mx+" to "+my);
+passid.focus(); 
+return false;)
+}O
+return true; 
+}O
+function allLetter(uname) 
+{ �
+var letters = /^[A-Za-z]+$/;;
+if(uname.value.match(letters)) 
+{R
+return true; 
+}S
+else0
+{S
+alert('Username must have alphabet characters only'); 
+uname.focus(); 
+return false;;
+}S
+}S
+function alphanumeric(uadd) 
+{ �
+var letters = /^[0-9a-zA-Z]+$/; 
+if(uadd.value.match(letters))/
+{W
+return true; 
+}X
+else0
+{X
+alert('User address must have alphanumeric characters only');�
+uadd.focus(); 
+return false; 
+}X
+}X
+function countryselect(ucountry)�
+{X
+if(ucountry.value == "Default") 
+{[
+alert('Select your country from the list'); 
+ucountry.focus(); 
+return false; 
+}\
+else�
+{\
+return true; 
+}\
+}\
+function allnumeric(uzip) 
+{ �
+var numbers = /^[0-9]+$/; 
+if(uzip.value.match(numbers))"
+{\
+return true; 
+}
+else�
+{
+alert('ZIP code must have numeric characters only');)
+uzip.focus(); 
+return false; 
+}
+}
+function ValidateEmail(uemail))
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;�
+if(uemail.value.match(mailformat))
+{
+return true; 
+}
+else�
+{
+alert("You have entered an invalid email address!");)
+uemail.focus(); 
+return false;)
+}
+} function validsex(umsex,ufsex)�
+{
+x=0; 
+if(umsex.checked)  
+{
+x++; 
+} if(ufsex.checked) 
+{
+x++; 
+}
+if(x==0) 
+{
+alert('Select Male/Female'); 
+umsex.focus(); 
+return false;;
+}
+else
+{
+alert('Form Succesfully Submitted');H
+window.location.reload();
+return true; 
+}
+}
+Flowchart:
+
+file_download Download the validation code from here.�
+You can view this  gSample JavaScript Registration From Validation Example  gin a separate browser window and check how the validation is working.�
+We would like to hear from you regarding this document. And we welcome any constructive suggestions to improve this example. 
+Now, when you have finished learning how to validate a sample registration form using JavaScript, let us take you to the another way doing the same thing. But this time, the instead of on submitting the form,  gvalidations are on field level , i.e. whenever you move from one field to another. Sure that will be preety interesting to learn and share as well.e
+Other JavaScript Validation:e
+Checking for non-empty 
+Checking for all lettersi
+Checking for all numbersi
+Checking for floating numbersl
+Checking for letters and numbers�
+Checking string length 
+Email Validationl
+Date Validation 
+A sample Registration Formo
+Phone No. Validation 
+Credit Card No. Validationo
+Password Validation 
+IP address Validation 
+
+﻿�This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. ©w3resource.com 2011-2017o
+Privacy�
+About)
+Contact�
+Feedback�
+Advertise
+�

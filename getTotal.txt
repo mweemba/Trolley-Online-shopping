@@ -1,0 +1,5 @@
+ <?php
+ $product = mysqli_query($conn,$prod_sql);
+                    while ($row = mysqli_fetch_array($product)) {
+                        
+						?>

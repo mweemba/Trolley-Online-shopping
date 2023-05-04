@@ -1,0 +1,523 @@
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+						/*-------------------Body------------------------*/
+						/*-------------------Body------------------------*/
+						/*-------------------Body------------------------*/
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+#gap {
+	height:90px;
+	background:none;
+}
+
+#basic, #advanced {
+	display:block;
+}
+
+#advanced {
+	display:none;
+}
+
+h17 {
+	position:absolute;
+	z-index:1001;
+	top:2px;
+	left:50px;
+	color:#fff;
+	font-size:36px;
+}
+
+h17 span img {
+	height:24px;
+	width:50px;
+}
+
+#links {
+	margin-top:10%;
+	display:block;
+}
+
+#chatToggle {
+	position:fixed;
+	right:-27px;
+	top:0px;
+	margin-top:32%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#container {
+	width:990px;
+	height:auto;
+}
+
+#header {
+	width:990px;
+	height:330px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;	
+}
+
+.logo {
+	width:400px;
+	height:330px;
+	border:1px solid rgba(255,255,255,.6);
+	border-right:none;
+	border-top-left-radius:8px;
+	box-shadow:-1px 0px 5px rgba(0,0,0,.1);
+}
+
+#logoWrapper {
+	width:400px;
+	margin-left:-400px;
+	height:330px;
+}
+
+.logopic {
+	height:214px;
+	width:380px;
+	margin-top:20px;	
+}
+
+.search input {
+	width:220px;
+	height:28px;
+}
+
+.search input#search {
+	width:100px;
+	height:30px;
+	font-size:16px;
+}
+
+.slider-wrapper {
+	width: 590px;
+	height:330px;
+}
+
+.slideShow {
+	margin-top:1px;
+	width:590px;
+	height:330px;
+}
+
+/*------other pages------*/
+.carLogo {
+	width:590px;
+	height:330px;
+	margin-top:-330px;
+	border-top-right-radius:8px;	
+}
+
+.carLogoWrapper {
+	width:590px;
+	height:330px;
+	margin-top:-330px;
+	border-top-right-radius:8px;
+}
+
+#sliderSlot img {
+	border-top-right-radius:8px;
+}
+/*------End other pages------*/
+
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+						/*-------------------Content------------------------*/
+						/*-------------------Content------------------------*/
+						/*-------------------Content------------------------*/
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+#content {
+	background: rgba(248,248,248,.95);
+	width:990px;
+	box-shadow:1px 0px 5px rgba(0,0,0,.1);
+	border:1px solid #087299;
+	border-bottom:none;
+	border-right:0px;
+}
+
+#contentWrapper {
+	width:989px;
+	height:1425px;
+	margin-top:-1426px;
+}
+
+.sidebar1, .sidebar2 {
+	width:120px;
+	float:left;
+	background: rgba(0,153,255,.7);
+	border-right:1px solid rgba(0,102,153,.2);
+	box-shadow: inset 1px 0 rgba(225,225,255,0.5), inset 10px 0 rgba(225,225,255,0.4), inset 10px 0 5px rgba(225,225,255,0.45), 1px 0px 3px rgba(0,0,0,.2);
+}
+
+ul#menu, ul#menu2 {
+	width:121px;
+}
+
+#sidebarToggle, ul#menu, .sidebar1 {
+	display:none;
+}
+
+.sidebar2 {
+	display:block;
+	border-radius:0px;
+}
+ 
+ul#menu li, ul#menu2 li {
+	height:73px;
+	width:100%;
+	border-left:none;
+	box-shadow:none;
+}
+
+ul#menu li a, ul#menu2 li a {
+	margin-top:-4px;
+   font-size: 16px;
+   line-height:25px;
+}
+
+ul#menu li:hover, ul#menu li.active, ul#menu2 li:hover, ul#menu2 li.active {
+	width:99%;
+}
+
+ul#menu li.active, ul#menu2 li.active {
+	box-shadow: inset 1px 0 rgba(225,225,255,0.5), inset 10px 0 rgba(225,225,255,0.4), inset 10px 0 30px rgba(225,225,255,0.45);
+	border:none;	
+}
+
+#cp {
+	position:fixed;
+}
+
+#carSelect {
+	height:40px;
+	padding-top:10px;
+}
+	
+#carSelect a {
+	font-size:32px;
+}
+
+#carSelect span {
+	font-size:32px;
+	top:0px;
+}
+
+/*------other pages------*/		
+#carName a {
+	font-size:32px;
+}
+
+#carName span {
+	font-size:34px;
+}
+/*------End other pages------*/
+	
+.adds {
+	width:862px;
+	height:auto;
+	padding-bottom:20px;
+}
+
+/*------other pages------*/
+.mainPanel {
+	width:616px;
+	margin-left:1px;
+}
+
+.Results {
+	width:858px;
+	height:1365px;
+	margin-left:0px;
+}
+
+.info {
+	margin-left:0px;
+	width:617px;
+}
+
+.LoginPanel {
+	margin-left:0px;
+	width:617px;
+}
+
+.Contact {
+	margin-left:0px;
+	width:617px;
+}
+
+#Message {
+	margin-top:40px;
+}
+
+#Message input {
+	width: 400px;
+}
+
+#Message textarea {
+	width: 540px;
+	font-size: 18px;
+}
+
+#Message input#submit {
+	height: 45px;
+	width: 140px;
+	font-size:22px;
+	margin-left:410px;
+}
+
+#login {
+	margin-left:0px;
+}
+/*------End other pages------*/
+
+.carSlot {
+	margin-top:20px;
+	margin-left:22px;
+	margin-right:2px;
+	padding-top:4px;
+	width:255px;
+	height:182px;
+}
+
+#relatedItems .carSlot {
+	height:150px;
+	width:220px;
+	margin-left:15px;
+	margin-top:15px;
+}
+
+.carSlot {
+	opacity:0;	
+    transform: translateX(60px);
+    -webkit-transition: all 0.9s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+            transition: all 0.9s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.is-showing {
+      opacity: 1;
+      transform: translateX(0px) translateY(0px); 
+}
+
+.carSlot:hover h15 {
+    -webkit-transition: all 0.9s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+            transition: all 0.9s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+
+.carPic img {
+	background-size:5%;
+}
+
+.NewTag h7, .TopTag h7, .SpecialTag h8, .SoldTag h7 {
+	padding:2px 37px;
+	margin-left:0px;
+}
+
+.SpecialTag h8 {
+	padding:3px 30px;
+	margin-left:0px;
+}
+
+.HandleNew1, .HandleTop1, .HandleSpecial1, .HandleSold1 {
+	right:20%;
+}
+
+#relatedItems .carSlot .HandleNew1, #relatedItems .carSlot .HandleTop1, #relatedItems .carSlot .HandleSpecial1, #relatedItems .carSlot .HandleSold1 {
+	right:21%;
+}
+
+.HandleNew2, .HandleTop2, .HandleSpecial2, .HandleSold2 {
+	right:-0.2%;
+	top:24%;
+	height:7.8%;
+	border-radius:8px;
+}
+
+#relatedItems .carSlot .HandleNew2, #relatedItems .carSlot .HandleTop2, #relatedItems .carSlot .HandleSpecial2, #relatedItems .carSlot .HandleSold2 {
+	top:27%;
+}
+
+.PriceHandle {
+	margin-top:-28px;
+	margin-left:0px;
+}
+
+.price {
+	min-width:118px;
+	margin-left:-6px;
+}
+
+h1 {
+	font-size:20px;
+	margin-top:1px;
+	margin-left:-2px;
+	padding:8px 15px;
+	text-shadow:none;
+}
+
+#relatedItems .carSlot h1 {
+	font-size:16px;
+}
+
+h5 {
+	height:24px;
+	transform:translateY(-35px);
+	
+	-webkit-transition: all 0.9s ease-in-out;
+	-moz-transition: all 0.9s ease-in-out;
+	-ms-transition: all 0.9s ease-in-out;
+	-o-transition: all 0.9s ease-in-out;
+	transition: all 0.9s ease-in-out;
+}
+
+h9 {
+	font-size:15px;
+}
+
+#relatedItems .carSlot h9 {
+	font-size:14px;
+}
+
+h12 p {
+	font-size:16px;
+}
+
+h12 p2 {
+	font-size:16px;
+}
+
+h15 {
+	font-size:16px;
+	line-height:18px;
+}
+
+/*------other pages------*/
+
+#sellerPic img, #clientPic img {
+	border:3px solid  rgba(255,255,255,1);
+}
+
+#clientReview h2{
+	padding-left:15px;
+}
+
+#clientReviewWrapper {
+	height:18vw;
+	border:1px solid rgba(0,0,0,.05);
+}
+
+
+#details {
+	width:250px;
+	height:1825px;
+	background:-webkit-linear-gradient(left,#fff,#fff);
+	border-left:1px solid rgba(0,0,0,.2);
+	box-shadow: inset 0px 1px 0px rgba(199,199,199,.3);
+}
+
+#details p {
+	margin:auto;
+	width:95%;
+	height:100px;
+	overflow:auto;
+	border-radius:3px;
+	border:1px solid rgba(0,0,0,.1);
+	background:rgba(238,238,238,.3);
+}
+
+h2 {
+	margin-left:4px;
+	margin-top:12px;
+	font-size: 22px;
+}	
+
+h3, h16 {
+	margin-left:8px;
+	font-size: 16px;
+}
+/*------End other pages------*/
+
+h7 {
+	font-size:15px;
+}
+
+.TopTag h7 {
+	font-size:12px;
+	padding:5px 15px;
+	padding-left:20px;
+	margin-left:6px;
+	line-height:23px;
+}
+
+#relatedItems .carSlot h7 {
+	font-size:14px;
+}
+
+h8 {
+	font-size:14px;
+}
+
+#relatedItems .carSlot h8 {
+	padding:3px 47px;
+	font-size:13px;
+}
+
+/*------other pages------*/
+.buyNow d {
+	font-size:30px;
+}
+/*------End other pages------*/
+
+#more {
+	margin-top:-6px;
+	margin:auto;
+	width:80%;
+	height:30px;
+}
+
+#more ul {
+	margin-top:1px;
+}
+
+#more li {
+	height:30px;
+	width:32px;
+	border-radius:4px;
+}
+
+#more a{
+	font-size:16px;
+}
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+						/*-------------------Footer------------------------*/
+						/*-------------------Footer------------------------*/
+						/*-------------------Footer------------------------*/
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
+#footer {
+	height:200px;
+	width: 990px;
+	line-height: 80px;
+	margin-bottom:5%;
+	box-shadow:1px 1px 5px rgba(0,0,0,.1);
+	border:1px solid rgba(255,255,255,.6);
+}
+
+#footerWrapper {
+	height:200px;
+	margin-top:-200px;
+	width:990px;
+}
+
+#linksBottom {
+	display:none;
+}
+
+h10 p {
+	width:390px;
+	font-size:16px;
+	padding-top:0px;
+}
+/*========================Designed by Fabian Shamano fabianshamano@yahoo.com======================*/
